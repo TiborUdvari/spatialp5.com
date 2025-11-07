@@ -1,0 +1,50 @@
+---
+title: Introduction
+description: An intro
+---
+
+import { Aside, LinkCard } from "@astrojs/starlight/components";
+
+<div class="flex w-full flex-row gap-2">
+  <div>
+    <video autoplay muted loop playsinline>
+      <source src="/spatialp5-1.mp4" type="video/mp4"></source>
+    </video>
+  </div>
+  <div class="m-0">
+    <video autoplay muted loop playsinline>
+      <source src="/spatialp5-2.mp4" type="video/mp4"></source>
+    </video>
+  </div>
+</div>
+
+Spatial p5 is a creative coding toolkit for rapid prototyping in immersive environments. It integrates <a href="https://p5js.org/">p5.js</a>, <a href="https://p5xr.org/#/">p5.xr</a> and <a href="https://teddavis.org/p5live/">P5 LIVE</a>, empowering artists and designers to test ideas in 3D spaces and collaborate in real time through browser-based tools. See the [presentation](/) and [demonstration](/demo) videos for a clear overview.
+
+## Key Features
+
+- **Browser-Based** – Runs directly in a browser, so you can start experimenting quickly without setting up a large editor
+- **Real-Time Coding** – See changes immediately as you write, making iteration and testing faster.
+- **Familiar p5.js Conventions** – Access mixed reality features using familiar p5.js coding patterns
+
+## Usage Modes
+
+- **Emulator (Desktop Browser)** — Develop and test sketches directly in the browser using the Immersive Web Emulator. Ideal for quick iteration, debugging, and collaborative live-coding
+- **Device (Meta Quest 3)** — Run and edit sketches directly in XR through the Meta Quest Browser with a keyboard and mouse. Best for smaller experiments or fine tuning spatial interactions.
+
+<Aside>Other mixed reality devices might work, but are not tested</Aside>
+
+## Next steps
+
+<LinkCard title="Device Mode Demo" description="Watch a short demo of Spatial p5 running directly on the Meta Quest 3." href="/demo" />
+
+<LinkCard
+  title="Getting Started"
+  description="Set up your environment and learn how to run Spatial p5 on desktop or in a headset."
+  href="/getting-started"
+/>
+
+<LinkCard title="Portfolio Project Page" description="Read the full story behind Spatial p5" href="https://tiborudvari.com/projects/spatial-p5/" />
+
+<LinkCard title="CC Fest Talk" description="Watch a full-length presentation introducing Spatial p5 and live-coding in mixed reality." href="https://www.youtube.com/watch?v=uw3cFVWxyhI" />
+
+<LinkCard title="Online Editor" description="If you're set up, open the Spatial p5 online editor and start experimenting right away." href="https://editor.spatialp5.com" />

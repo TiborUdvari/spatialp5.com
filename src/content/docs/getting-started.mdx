@@ -1,0 +1,58 @@
+---
+title: Get Started
+description: Getting started with Spatial p5 on with the emulator or on a device
+---
+
+import { Steps, Aside } from '@astrojs/starlight/components';
+
+## Emulator Mode (Desktop Browser)
+
+The [Immersive Web Emulator](https://chromewebstore.google.com/detail/immersive-web-emulator/cgffilbpcibhmcfbgggfhfolhkfbhmik?hl=en&pli=1) is a Chrome extension that simulates a WebXR device in your browser. It provides a close approximation of the Meta Quest environment, including support for hand tracking. This makes it useful for quick development and debugging before testing on a real headset.
+
+<Aside>
+Spatial p5 uses a **custom build** of the emulator that’s compatible with the P5 LIVE editor.  
+</Aside>
+
+### Setup
+
+<video autoplay muted loop playsinline>
+  <source src="/emulator-installation.mp4" type="video/mp4"></source>
+</video>
+
+<Steps>
+  1. Download the [custom build zip](https://github.com/TiborUdvari/immersive-web-emulator/releases/tag/1.5.1) file and unzip it
+  2. Open `chrome://extensions` and enable Developer mode
+  3. Select Load unpacked and choose the unzipped folder
+  4. Open a [working example](/hello-spinning-cube.html). You should see a spinning cube like the one below. 
+  ![/working.png](/working.png)
+</Steps>
+
+### Run your first sketch
+
+<Steps>
+  1. Go to the [online editor](https://editor.spatialp5.com/)
+  2. Try out the examples in the `SPATIAL P5` folder
+  3. When you are ready change the code and see your results in real time
+  4. Control the emulated device through the newly added `WebXR` tab inside the browsers's developer tool panel
+</Steps>
+
+
+## Device (Meta Quest 3)
+
+Spatial p5 has been tested on the Meta Quest 3 using the default Meta Quest Browser. While other mixed reality devices may work, only this setup has been verified.
+
+### Setup
+
+<Steps>
+  1. Connect a bluetooth physical keyboard and mouse 
+  2. In the browser, disable the `WebXR user activation requirement` flag in `chrome://flags/#webxr-enforce-user-activation`
+  3. Go to the [online editor](https://editor.spatialp5.com/) and try out one of the provided examples from the `SPATIAL P5` folder
+</Steps>
+
+### Interaction Notes
+* Move the browser window to the side to prevent UI elements from blocking the immersive view
+* Hand tracking is only active when the immersive experience is in the foreground
+
+<Aside>
+  See the [demo](/demo) page video that explains how to interact.
+</Aside>

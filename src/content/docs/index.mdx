@@ -1,40 +1,25 @@
 ---
-title: Welcome to Starlight
+title: Spatial p5
 description: Get started building your docs site with Starlight.
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  title: Live Coding in Mixed Reality with p5.js
+  # tagline: Live coding in Mixed Reality with p5.js
+  # image:
+  #   file: ../../assets/typing.gif
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Get Started
+      link: /introduction/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: About This Project
+      link: https://tiborudvari.com/projects/spatial-p5/
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import './index.css';
+import { LinkButton } from '@astrojs/starlight/components';
 
-## Next steps
+import Vimeo from "../../components/Vimeo.astro";
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+<Vimeo title="Spatial p5" vimeoID="1019560381" />
