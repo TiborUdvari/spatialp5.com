@@ -33,6 +33,13 @@ export default defineConfig({
         { slug: 'introduction' },
         { slug: 'demo' },
         { slug: 'getting-started' },
+        {
+          label: "Community Works",
+          items: [
+            { label: "3D Etch A Sketch", slug: "community/3d-etch-a-sketch" },
+            { label: "Share your work", slug: "community/share" },
+          ],
+        },
         // {
         //   label: "Topics",
         //   items: [

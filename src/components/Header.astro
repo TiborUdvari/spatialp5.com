@@ -19,7 +19,7 @@ const isHomepage = Astro.locals.starlightRoute.id === '';
  * Render the `Search` component if Pagefind is enabled or the default search component has been overridden.
  */
 const shouldRenderSearch =
-	config.pagefind || config.components.Search !== '@astrojs/starlight/components/Search.astro';
+config.pagefind || config.components.Search !== '@astrojs/starlight/components/Search.astro';
 ---
 
 <div class:list={["-mt-0.5 md:mt-0", "flex flex-row justify-between items-center _header bg-black", {"max-w-[67.5rem] mx-auto" : isHomepage}]}
