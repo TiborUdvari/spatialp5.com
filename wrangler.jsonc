@@ -1,6 +1,6 @@
 {
 	"main": "dist/_worker.js/index.js",
-	"name": "spatialp5-com",
+	"name": "spatial-p5",
   "compatibility_date": "2025-11-07",
   "compatibility_flags": [
     "nodejs_compat",
